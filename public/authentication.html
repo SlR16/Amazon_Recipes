@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passcode</title>
+</head>
+<body>
+  <h1>Enter Passcode</h1>
+  <form id="passcodeForm">
+    <input type="password" id="passcodeInput" placeholder="Enter Passcode" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const passcode = "your-secret-passcode";  // Set your passcode here
+    const form = document.getElementById('passcodeForm');
+    const passcodeInput = document.getElementById('passcodeInput');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (passcodeInput.value === passcode) {
+        // Store in localStorage to avoid redirecting on every visit
+        localStorage.setItem('loggedIn', 'true');
+        window.location.href = "/"; // Redirect to homepage
+      } else {
+        alert('Incorrect passcode');
+      }
+    });
+
+    // Check if already logged in
+    if (localStorage.getItem('loggedIn') === 'true') {
+      window.location.href = "/"; // Skip passcode if already logged in
+    }
+  </script>
+</body>
+</html>

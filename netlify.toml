@@ -1,5 +1,6 @@
+
 [[redirects]]
-  from = "/index.html"
-  to = "/passcode.html"
+  from = "/"
+  to = "/public/authentication.html"
   status = 302
   force = true
