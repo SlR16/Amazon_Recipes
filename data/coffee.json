@@ -1,0 +1,39 @@
+[
+    {
+      "name": "Espresso",
+      "type": "hot",
+      "ingredients": [
+        { "name": "Espresso Shot", "amount": 2, "unit": "oz" }
+      ],
+      "process": "Brew 2 oz of espresso and serve immediately."
+    },
+    {
+      "name": "Iced Latte",
+      "type": "iced",
+      "ingredients": [
+        { "name": "Espresso Shot", "amount": 1, "unit": "oz" },
+        { "name": "Milk", "amount": 6, "unit": "oz" },
+        { "name": "Ice Cubes", "amount": 4, "unit": "pcs" }
+      ],
+      "process": "Pour espresso over ice, add milk, and stir."
+    },
+    {
+      "name": "Cappuccino",
+      "type": "hot",
+      "ingredients": [
+        { "name": "Espresso Shot", "amount": 2, "unit": "oz" },
+        { "name": "Milk Foam", "amount": 4, "unit": "oz" }
+      ],
+      "process": "Brew espresso and top with milk foam."
+    },
+    {
+        "name": "Cappuccino",
+        "type": "hot",
+        "ingredients": [
+          { "name": "Espresso Shot", "amount": 2, "unit": "oz" },
+          { "name": "Milk Foam", "amount": 4, "unit": "oz" }
+        ],
+        "process": "Brew espresso and top with milk foam."
+      }
+  ]
+  

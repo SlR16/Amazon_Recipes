@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Coffee Recipes</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Amazon Coffee Recipes</h1>
+    <nav>
+      <button onclick="showCategory('coffee')">Coffee</button>
+      <button onclick="showCategory('selected-coffee')">Selected Coffee</button>
+      <button onclick="showCategory('tea')">Tea</button>
+      <button onclick="showCategory('special')">Special</button>
+    </nav>
+    
+  <section id="search-section">
+    <input
+      type="text"
+      id="search-bar"
+      placeholder="Search for a drink..."
+      oninput="searchRecipes(event)"
+    />
+  </section>
+
+  </header>
+  <main id="content">
+    <p>Select a category to view recipes.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Amazon Coffee</p>
+  </footer>
+
+  <script src="/assets/scripts/app.js"></script>
+</body>
+</html>
